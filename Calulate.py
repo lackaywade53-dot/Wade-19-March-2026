@@ -21,6 +21,19 @@ def add(a, b):  # a and b are parameters
     c = a + b
     return c
 
+def add(a, b):
+ return a + b
+
+def subtract(a, b):
+ return a - b
+
+def multiply(a, b):
+ return a * b
+
+def divide(a, b):
+ if b == 0:
+  return "Error: Division by zero!"
+ return a / b
 
 # Function call example
 num1 = 3
@@ -30,9 +43,15 @@ result = add(num1, num2)  # 3 and 5 are arguments
 print("The sum is:", result)
 
 
+
 # Menu-driven program
 print("\nMenu:")
 print("Press 1 to Add")
+print("Press 2 to Subtract")
+print("Press 3 to Multply")
+print("Press 4 to Divide")
+
+
 
 choice = int(input("What do you want to do? "))
 
